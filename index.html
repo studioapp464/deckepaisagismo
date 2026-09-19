@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVR Deck e Paisagismo | Especialistas em Áreas Externas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#22c55e', // Green-500
+                        dark: '#0a0a0a',     // Very dark black
+                        accent: '#166534',   // Green-800
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-effect {
+            background: rgba(10, 10, 10, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(34, 197, 94, 0.2);
+        }
+        .btn-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .btn-hover:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px -5px rgba(34, 197, 94, 0.4);
+        }
+        .service-card {
+            transition: all 0.4s ease;
+            border: 1px solid rgba(34, 197, 94, 0.1);
+        }
+        .service-card:hover {
+            border-color: #22c55e;
+            background: rgba(34, 197, 94, 0.05);
+            transform: translateY(-10px);
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #22c55e, #4ade80);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-dark text-gray-200 font-sans">
+
+    <!-- Header -->
+    <header class="fixed w-full z-50 glass-effect">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                    <i data-lucide="leaf" class="text-dark w-6 h-6"></i>
+                </div>
+                <span class="font-heading font-bold text-xl tracking-tighter text-white">SVR <span class="text-primary">DECK</span></span>
+            </div>
+
+            <nav class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-widest">
+                <a href="#home" class="hover:text-primary transition-colors">Home</a>
+                <a href="#servicos" class="hover:text-primary transition-colors">Serviços</a>
+                <a href="#sobre" class="hover:text-primary transition-colors">Sobre</a>
+                <a href="#contato" class="hover:text-primary transition-colors">Contato</a>
+            </nav>
+
+            <a href="https://wa.me/5548999442245" target="_blank" class="btn-hover bg-primary text-dark font-bold px-6 py-2 rounded-full text-sm uppercase tracking-tighter flex items-center space-x-2">
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+                <span>Agende Já</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+        <!-- Decorative background blur -->
+        <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-primary/20 rounded-full blur-[120px]"></div>
+        <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-accent/20 rounded-full blur-[120px]"></div>
+
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <h1 class="font-heading text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight" data-aos="fade-up">
+                Transformando Espaços em <br>
+                <span class="gradient-text">Experiências Únicas</span>
+            </h1>
+            <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10" data-aos="fade-up" data-aos-delay="100">
+                Especialistas em Decks, Pergolados e Paisagismo. Unindo a beleza da natureza com a praticidade e agilidade que você merece.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6" data-aos="fade-up" data-aos-delay="200">
+                <a href="https://wa.me/5548999442245" target="_blank" class="btn-hover bg-primary text-dark font-bold px-8 py-4 rounded-full text-lg w-full md:w-auto flex items-center justify-center space-x-2">
+                    <i data-lucide="calendar" class="w-5 h-5"></i>
+                    <span>Agendar Orçamento</span>
+                </a>
+                <a href="#servicos" class="btn-hover border border-gray-600 hover:border-primary text-white font-medium px-8 py-4 rounded-full text-lg w-full md:w-auto transition-all">
+                    Ver Serviços
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="py-24 bg-dark">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-heading text-4xl font-bold text-white mb-4" data-aos="fade-down">Nossos Serviços</h2>
+                <div class="w-20 h-1 bg-primary mx-auto rounded-full" data-aos="zoom-in"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card p-8 rounded-2xl bg-[#111] group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+                        <i data-lucide="layout" class="text-primary group-hover:text-dark w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-white mb-3">Deck de Madeira</h3>
+                    <p class="text-gray-400 leading-relaxed">Construções robustas e elegantes que trazem conforto e sofisticação para sua área externa.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card p-8 rounded-2xl bg-[#111] group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+                        <i data-lucide="umbrella" class="text-primary group-hover:text-dark w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-white mb-3">Pergolados Modernos</h3>
+                    <p class="text-gray-400 leading-relaxed">Design contemporâneo para criar ambientes de sombra e lazer com estilo único.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card p-8 rounded-2xl bg-[#111] group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+                        <i data-lucide="flower-2" class="text-primary group-hover:text-dark w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-white mb-3">Jardins Encantadores</h3>
+                    <p class="text-gray-400 leading-relaxed">Paisagismo completo para transformar seu quintal em um refúgio de paz e beleza.</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card p-8 rounded-2xl bg-[#111] group" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+                        <i data-lucide="trash-2" class="text-primary group-hover:text-dark w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-white mb-3">Mini Entulhos</h3>
+                    <p class="text-gray-400 leading-relaxed">Remoção ágil de resíduos com latões de 200L, ideal para locais de difícil acesso.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Feature Section -->
+    <section class="py-24 bg-gradient-to-b from-dark to-accent/10">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2" data-aos="fade-right">
+                    <div class="relative">
+                        <div class="absolute -inset-4 bg-primary/20 blur-2xl rounded-full"></div>
+                        <div class="relative bg-[#111] p-4 rounded-3xl border border-primary/30">
+                            <div class="aspect-video bg-gray-800 rounded-2xl flex items-center justify-center">
+                                <i data-lucide="truck" class="text-primary w-20 h-20 opacity-50"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2" data-aos="fade-left">
+                    <h2 class="font-heading text-4xl font-bold text-white mb-6">Praticidade em <span class="text-primary">Locais Difíceis</span></h2>
+                    <p class="text-gray-300 text-lg mb-8 leading-relaxed">
+                        Sabemos que nem todo lugar é acessível para caminhões de entulho comuns. Por isso, oferecemos a solução de <span class="text-white font-semibold">mini entulhos em latões de 200lt</span>.
+                        <br><br>
+                        Nós colocamos o tonel exatamente onde você precisa, dentro do seu imóvel, garantindo agilidade total na limpeza da sua obra ou jardim.
+                    </p>
+                    <div class="flex items-center space-x-4 mb-8">
+                        <div class="flex items-center space-x-2 text-primary">
+                            <i data-lucide="check-circle-2" class="w-5 h-5"></i>
+                            <span class="text-white">Acesso facilitado</span>
+                        </div>
+                        <div class="flex items-center space-x-2 text-primary">
+                            <i data-lucide="check-circle-2" class="w-5 h-5"></i>
+                            <span class="text-white">Agilidade máxima</span>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/5548999442245" target="_blank" class="btn-hover inline-flex items-center space-x-2 bg-white text-dark font-bold px-8 py-4 rounded-full">
+                        <i data-lucide="message-square" class="w-5 h-5"></i>
+                        <span>Solicitar Coleta</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="py-24 bg-dark">
+        <div class="container mx-auto px-6 text-center">
+            <div class="max-w-3xl mx-auto" data-aos="zoom-in">
+                <h2 class="font-heading text-4xl font-bold text-white mb-8">SVR Deck e Paisagismo</h2>
+                <p class="text-gray-400 text-lg leading-relaxed mb-12">
+                    Somos uma empresa comprometida com a qualidade e a eficiência. Nossa missão é entregar projetos de deck, pergolados e paisagismo que unam estética e funcionalidade, sempre com um atendimento ágil e transparente.
+                    <br><br>
+                    Do planejamento à execução e gestão de resíduos, cuidamos de cada detalhe para que você apenas aproveite o seu novo espaço.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div class="p-6">
+                        <div class="text-3xl font-bold text-primary mb-2">Qualidade</div>
+                        <div class="text-gray-500 text-sm uppercase tracking-widest">Materiais Premium</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-3xl font-bold text-primary mb-2">Agilidade</div>
+                        <div class="text-gray-500 text-sm uppercase tracking-widest">Entrega no Prazo</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-3xl font-bold text-primary mb-2">Eficiência</div>
+                        <div class="text-gray-500 text-sm uppercase tracking-widest">Soluções Práticas</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="py-24 bg-[#050505]">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <div data-aos="fade-right">
+                    <h2 class="font-heading text-4xl font-bold text-white mb-6">Vamos conversar?</h2>
+                    <p class="text-gray-400 text-lg mb-10">
+                        Estamos prontos para tirar seu projeto do papel. Entre em contato conosco para um orçamento personalizado.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="map-pin" class="text-primary w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold">Endereço</h4>
+                                <p class="text-gray-400">Palhoça - SC</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="clock" class="text-primary w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold">Horário de Funcionamento</h4>
+                                <p class="text-gray-400">Segunda a Sexta: 09:00 - 20:30<br>Sábado e Domingo: Fechado</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="phone" class="text-primary w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold">WhatsApp</h4>
+                                <p class="text-gray-400">(48) 99944-2245</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="mt-12">
+                        <a href="https://wa.me/5548999442245" target="_blank" class="btn-hover inline-flex items-center space-x-3 bg-primary text-dark font-bold px-8 py-4 rounded-full text-lg">
+                            <i data-lucide="message-circle" class="w-6 h-6"></i>
+                            <span>Fale Conosco Agora</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="h-full min-h-[400px] rounded-3xl overflow-hidden border border-gray-800" data-aos="fade-left">
+                    <!-- Map Embed (Placeholder) -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113039.9866094592!2d-48.75309352511022!3d-27.701857469588884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9527320ed5be2ac1%3A0x3d87163b9d90aa06!2zUGFsaG_Dp2EsIFND!5e0!3m2!1spt-BR!2sbr!4v1789838957594!5m2!1spt-BR!2sbr"
+                        class="w-full h-full grayscale invert opacity-80"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-dark border-t border-gray-900">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex items-center justify-center space-x-2 mb-6">
+                <div class="w-8 h-8 bg-primary rounded flex items-center justify-center">
+                    <i data-lucide="leaf" class="text-dark w-5 h-5"></i>
+                </div>
+                <span class="font-heading font-bold text-lg text-white">SVR <span class="text-primary">DECK</span></span>
+            </div>
+            <p class="text-gray-500 text-sm">
+                &copy; 2026 SVR Deck e Paisagismo. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Initialize AOS (Animate on Scroll)
+        AOS.init({
+            duration: 1000,
+            once: true,
+            easing: 'ease-out-cubic'
+        });
+    </script>
+</body>
+</html>
